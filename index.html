@@ -1,0 +1,1347 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; worker-src 'self' blob:; media-src blob:;">
+
+  <meta name="theme-color" content="#0b0e13">
+
+  <title>PulseStage — Practice with awareness</title>
+
+  <!-- Existing styles -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./landing.css">
+
+  <!-- Command Center -->
+  <link rel="stylesheet" href="./command-center.css">
+</head>
+
+<body class="pulse-app">
+
+  <!-- ======================================
+       PUBLIC LANDING PAGE
+  ======================================= -->
+
+  <section id="landing-page" class="landing-page">
+
+    <nav class="site-nav">
+
+      <a class="brand" href="#top" aria-label="PulseStage home">
+        <span class="brand-mark">
+          <span></span><span></span><span></span>
+        </span>
+        <span>PulseStage</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#how-it-works">How it works</a>
+        <a href="#signals">Human sensing</a>
+        <a href="#privacy">Privacy</a>
+      </div>
+
+      <button class="nav-cta" id="nav-open-studio" type="button">
+        Open desktop app <span>↗</span>
+      </button>
+
+    </nav>
+
+    <main class="landing-main" id="top">
+
+      <!-- HERO -->
+
+      <section class="hero-section">
+
+        <div class="hero-copy">
+
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            A more considered way to rehearse
+          </div>
+
+          <h1>
+            Make every<br>
+            practice <em>count.</em>
+          </h1>
+
+          <p class="hero-description">
+            Prepare for presentations, interviews and important
+            conversations with real-time human-sensing insights
+            and practical rehearsal feedback.
+          </p>
+
+          <div class="hero-actions">
+
+            <button class="button-primary"
+                    id="hero-open-studio"
+                    type="button">
+              Start a rehearsal <span aria-hidden="true">→</span>
+            </button>
+
+            <a class="text-link" href="#how-it-works">
+              Explore how it works <span>↓</span>
+            </a>
+
+          </div>
+
+          <div class="hero-footnote">
+            <span class="status-dot"></span>
+            Camera sensing starts only when you choose to begin.
+          </div>
+
+        </div>
+
+        <!-- PRODUCT PREVIEW -->
+
+        <div class="product-preview"
+             aria-label="Illustrative PulseStage interface preview">
+
+          <div class="preview-topbar">
+            <div class="window-controls">
+              <i></i><i></i><i></i>
+            </div>
+
+            <span>REHEARSAL OVERVIEW</span>
+            <span class="preview-label">PRODUCT PREVIEW</span>
+          </div>
+
+          <div class="preview-body">
+
+            <aside class="preview-sidebar">
+
+              <div class="preview-sidebar-brand">
+                <span class="mini-mark">P</span>
+                PulseStage
+              </div>
+
+              <div class="preview-nav-item active">
+                <span>▦</span> Overview
+              </div>
+
+              <div class="preview-nav-item">
+                <span>◉</span> Rehearsal
+              </div>
+
+              <div class="preview-nav-item">
+                <span>⌁</span> Signal history
+              </div>
+
+              <div class="preview-nav-item">
+                <span>▤</span> Reports
+              </div>
+
+              <div class="preview-sidebar-bottom">
+                WORKSPACE<br>
+                <b>Personal practice</b>
+              </div>
+
+            </aside>
+
+            <div class="preview-content">
+
+              <div class="preview-heading">
+                <div>
+                  <small>MONITOR YOUR PRACTICE</small>
+                  <h3>Good afternoon.</h3>
+                </div>
+                <span class="preview-avatar">U</span>
+              </div>
+
+              <div class="preview-metrics">
+
+                <div>
+                  <small>HEART RATE</small>
+                  <strong>— —</strong>
+                  <small class="metric-unit">BPM</small>
+                </div>
+
+                <div>
+                  <small>BREATHING</small>
+                  <strong>— —</strong>
+                  <small class="metric-unit">BR/MIN</small>
+                </div>
+
+                <div>
+                  <small>SESSIONS</small>
+                  <strong>— —</strong>
+                  <small class="metric-unit">COMPLETED</small>
+                </div>
+
+              </div>
+
+              <div class="preview-chart">
+
+                <div class="preview-chart-head">
+                  <b>Signal activity</b>
+                  <span>ILLUSTRATIVE</span>
+                </div>
+
+                <svg viewBox="0 0 470 112"
+                     role="img"
+                     aria-label="Decorative example signal waveform">
+
+                  <path class="chart-gridline"
+                        d="M0 22H470 M0 56H470 M0 90H470"/>
+
+                  <path class="chart-line"
+                        d="M0 66 L25 66 L38 58 L50 71 L65 65 L88 65 L102 39 L117 77 L133 65 L155 65 L174 54 L190 69 L211 65 L236 65 L249 46 L264 75 L280 65 L302 65 L319 58 L337 68 L354 65 L378 65 L393 48 L408 74 L425 65 L449 65 L470 55"/>
+
+                </svg>
+
+                <div class="chart-axis">
+                  <span>00:00</span>
+                  <span>SESSION TIMELINE</span>
+                  <span>05:00</span>
+                </div>
+
+              </div>
+
+              <div class="preview-note">
+                <span class="note-mark">i</span>
+                <span>
+                  Live measurements appear only during an active,
+                  valid sensing session.
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- TRUST STRIP -->
+
+      <section class="trust-strip" id="how-it-works">
+
+        <span>BUILT AROUND THE PRACTICE, NOT THE PERFORMANCE</span>
+
+        <div><b>01</b> Prepare with intention</div>
+        <div><b>02</b> Understand your signals</div>
+        <div><b>03</b> Improve your delivery</div>
+
+      </section>
+
+      <!-- FEATURES -->
+
+      <section class="content-section" id="signals">
+
+        <div class="section-intro">
+
+          <span class="section-kicker">
+            A DIFFERENT KIND OF FEEDBACK
+          </span>
+
+          <h2>
+            Your practice has more<br>
+            to tell you.
+          </h2>
+
+          <p>
+            PulseStage brings physiological measurements into
+            the rehearsal process, so you can review patterns
+            alongside the moments that matter.
+          </p>
+
+        </div>
+
+        <div class="feature-list">
+
+          <article class="feature-row">
+            <span class="feature-index">01</span>
+            <div>
+              <h3>Human sensing, thoughtfully applied</h3>
+              <p>
+                Use the camera-based SmartSpectra SDK to access
+                supported signals such as pulse and breathing
+                rate when measurement conditions are valid.
+              </p>
+            </div>
+            <span class="feature-arrow">↗</span>
+          </article>
+
+          <article class="feature-row">
+            <span class="feature-index">02</span>
+            <div>
+              <h3>Feedback connected to your rehearsal</h3>
+              <p>
+                Review signal trends alongside session events
+                and receive practical suggestions that support
+                better pacing and preparation.
+              </p>
+            </div>
+            <span class="feature-arrow">↗</span>
+          </article>
+
+          <article class="feature-row">
+            <span class="feature-index">03</span>
+            <div>
+              <h3>Progress you can reflect on</h3>
+              <p>
+                Keep a record of completed sessions, revisit
+                observations and notice changes in your
+                rehearsal habits over time.
+              </p>
+            </div>
+            <span class="feature-arrow">↗</span>
+          </article>
+
+        </div>
+
+      </section>
+
+      <!-- PRIVACY -->
+
+      <section class="privacy-section" id="privacy">
+
+        <div>
+          <span class="section-kicker">PRIVACY BY DESIGN</span>
+          <h2>Your camera.<br>Your choice.</h2>
+        </div>
+
+        <p>
+          Camera access is requested for an active sensing session.
+          PulseStage is designed for rehearsal support, not medical
+          diagnosis, covert monitoring or automated judgments
+          about your emotions.
+        </p>
+
+      </section>
+
+      <!-- CLOSING CTA -->
+
+      <section class="closing-section">
+
+        <div>
+          <span class="section-kicker">READY WHEN YOU ARE</span>
+          <h2>Make the next run<br>your best one.</h2>
+        </div>
+
+        <button class="button-primary"
+                id="bottom-open-studio"
+                type="button">
+          Open PulseStage <span>→</span>
+        </button>
+
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+      <a class="brand footer-brand" href="#top">
+        <span class="brand-mark">
+          <span></span><span></span><span></span>
+        </span>
+        <span>PulseStage</span>
+      </a>
+
+      <span>Practice with awareness.</span>
+      <span>Human-sensing insights for rehearsal.</span>
+
+    </footer>
+
+  </section>
+
+
+  <!-- ======================================
+       COMMAND CENTER APPLICATION
+  ======================================= -->
+
+  <div id="studio-shell" class="studio-shell" hidden>
+
+    <!-- APPLICATION HEADER -->
+
+    <header class="studio-header">
+
+      <div class="studio-brand">
+
+        <span class="brand-mark">
+          <span></span><span></span><span></span>
+        </span>
+
+        <div>
+          <strong>PulseStage</strong>
+          <small>COMMAND CENTER</small>
+        </div>
+
+      </div>
+
+      <div class="studio-header-actions">
+
+        <button id="btn-back-home"
+                class="quiet-button"
+                type="button">
+          ← Website
+        </button>
+
+        <span id="status-badge"
+              class="status status-uninitialized">
+          Uninitialized
+        </span>
+
+      </div>
+
+    </header>
+
+
+    <!-- ERROR BANNER -->
+
+    <div id="error-banner"
+         class="error-banner"
+         hidden>
+
+      <span class="error-banner-code" id="error-code">—</span>
+
+      <span class="error-banner-message"
+            id="error-message"></span>
+
+    </div>
+
+
+    <!-- SIDEBAR + WORKSPACE -->
+
+    <div class="command-center-body">
+
+      <!-- SIDEBAR -->
+
+      <aside class="cc-sidebar">
+
+        <div class="cc-sidebar-label">
+          WORKSPACE
+        </div>
+
+        <button class="cc-nav-item active"
+                data-page="overview"
+                type="button"
+                aria-current="page">
+          <span>▦</span>
+          Overview
+        </button>
+
+        <button class="cc-nav-item"
+                data-page="rehearsal"
+                type="button">
+          <span>◉</span>
+          Rehearsal
+        </button>
+
+        <div class="cc-sidebar-divider"></div>
+
+        <div class="cc-sidebar-label">
+          ANALYTICS
+        </div>
+
+        <button class="cc-nav-item"
+                data-page="history"
+                type="button">
+          <span>⌁</span>
+          Signal history
+        </button>
+
+        <button class="cc-nav-item"
+                data-page="reports"
+                type="button">
+          <span>▤</span>
+          Reports
+        </button>
+
+        <div class="cc-sidebar-divider"></div>
+
+        <div class="cc-sidebar-label">
+          PREFERENCES
+        </div>
+
+        <button class="cc-nav-item"
+                data-page="settings"
+                type="button">
+          <span>⚙</span>
+          Settings
+        </button>
+
+        <button class="cc-nav-item"
+                data-page="privacy"
+                type="button">
+          <span>◇</span>
+          Privacy
+        </button>
+
+        <div class="cc-sidebar-bottom">
+
+          <span class="cc-status-dot"></span>
+
+          <div>
+            <strong>Local workspace</strong>
+            <small>Personal practice environment</small>
+          </div>
+
+        </div>
+
+      </aside>
+
+
+      <!-- MAIN WORKSPACE -->
+
+      <main class="cc-workspace">
+
+
+        <!-- ==================================
+             01. OVERVIEW
+        =================================== -->
+
+        <section id="page-overview" class="cc-page">
+
+          <div class="cc-page-heading">
+
+            <div>
+              <span class="section-kicker">
+                WORKSPACE OVERVIEW
+              </span>
+
+              <h1>Command Center</h1>
+
+              <p>
+                Your rehearsal activity and physiological
+                measurement workspace.
+              </p>
+            </div>
+
+            <button class="cc-primary-button"
+                    data-page="rehearsal"
+                    type="button">
+              Start rehearsal <span>→</span>
+            </button>
+
+          </div>
+
+
+          <!-- STATISTICS -->
+
+          <div class="cc-stat-grid">
+
+            <article class="cc-stat-card">
+              <span>COMPLETED SESSIONS</span>
+              <strong id="cc-total-sessions">0</strong>
+              <small>Recorded on this device</small>
+            </article>
+
+            <article class="cc-stat-card">
+              <span>TOTAL PRACTICE TIME</span>
+              <strong id="cc-total-time">0 min</strong>
+              <small>Across recorded sessions</small>
+            </article>
+
+            <article class="cc-stat-card">
+              <span>LAST BREATHING RATE</span>
+              <strong id="cc-last-breathing">—</strong>
+              <small>BR/min · Last recorded session</small>
+            </article>
+
+            <article class="cc-stat-card">
+              <span>LAST PULSE RATE</span>
+              <strong id="cc-last-pulse">—</strong>
+              <small>BPM · Last recorded session</small>
+            </article>
+
+          </div>
+
+
+          <!-- OVERVIEW CONTENT -->
+
+          <div class="cc-overview-grid">
+
+            <section class="cc-panel">
+
+              <div class="cc-panel-heading">
+
+                <div>
+                  <span class="section-kicker">
+                    RECENT ACTIVITY
+                  </span>
+
+                  <h2>Recent sessions</h2>
+
+                  <p>
+                    Your latest completed rehearsal sessions.
+                  </p>
+                </div>
+
+                <button class="cc-text-button"
+                        data-page="history"
+                        type="button">
+                  View history →
+                </button>
+
+              </div>
+
+              <div id="cc-recent-sessions"
+                   class="cc-empty-state">
+
+                <span class="cc-empty-icon">◷</span>
+
+                <strong>No sessions yet</strong>
+
+                <p>
+                  Your completed rehearsals will appear here.
+                </p>
+
+              </div>
+
+            </section>
+
+
+            <section class="cc-panel cc-focus-panel">
+
+              <span class="section-kicker">
+                YOUR NEXT SESSION
+              </span>
+
+              <h2>Make room for better practice.</h2>
+
+              <p>
+                Position your camera, check your lighting
+                and begin a rehearsal when you're ready.
+              </p>
+
+              <button class="cc-primary-button"
+                      data-page="rehearsal"
+                      type="button">
+                Open rehearsal workspace →
+              </button>
+
+            </section>
+
+          </div>
+
+
+          <p class="cc-footnote">
+            Measurements are available only when supported
+            sensing conditions are valid. PulseStage is not
+            a medical diagnostic system.
+          </p>
+
+        </section>
+
+
+        <!-- ==================================
+             02. REHEARSAL
+             Original SmartSpectra IDs preserved.
+        =================================== -->
+
+        <section id="page-rehearsal"
+                 class="cc-page"
+                 hidden>
+
+          <div class="cc-page-heading">
+
+            <div>
+              <span class="section-kicker">
+                LIVE SESSION
+              </span>
+
+              <h1>Rehearsal workspace</h1>
+
+              <p>
+                Position yourself and start a live sensing session.
+              </p>
+            </div>
+
+            <span class="session-label">
+              CAMERA-BASED SENSING
+            </span>
+
+          </div>
+
+
+          <main class="studio-main">
+
+            <!-- LEFT COLUMN -->
+
+            <section class="left-col">
+
+              <div class="studio-section-heading">
+
+                <div>
+                  <span class="section-kicker">
+                    CAMERA PREVIEW
+                  </span>
+
+                  <h2>Live positioning</h2>
+                </div>
+
+                <span class="session-label">
+                  SMARTSPECTRA
+                </span>
+
+              </div>
+
+
+              <!-- ORIGINAL CAMERA PREVIEW -->
+
+              <div class="preview">
+
+                <video id="preview"
+                       autoplay
+                       playsinline
+                       muted>
+                </video>
+
+                <div class="preview-empty">
+
+                  <span class="camera-icon">◎</span>
+
+                  <b>Your camera preview will appear here</b>
+
+                  <span>Start a session when you're ready.</span>
+
+                </div>
+
+                <div id="validation" class="hint">
+                  Review your camera position, then click
+                  <strong>Start session</strong>.
+                </div>
+
+              </div>
+
+
+              <!-- LIVE READOUTS -->
+
+              <div class="studio-subheading">
+
+                <h3>Live measurements</h3>
+
+                <span>
+                  Updates when valid data is available
+                </span>
+
+              </div>
+
+              <div class="readouts">
+
+                <div class="readout">
+
+                  <div class="readout-label">
+                    Heart rate
+                  </div>
+
+                  <div class="readout-value">
+
+                    <span id="readout-pulse"
+                          class="skeleton-value">—</span>
+
+                    <span class="readout-unit">BPM</span>
+
+                  </div>
+
+                </div>
+
+                <div class="readout">
+
+                  <div class="readout-label">
+                    Breathing rate
+                  </div>
+
+                  <div class="readout-value">
+
+                    <span id="readout-breathing"
+                          class="skeleton-value">—</span>
+
+                    <span class="readout-unit">BR/min</span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- MEASUREMENT SETTINGS -->
+
+              <div class="metrics-toggles">
+
+                <div class="panel-label">
+                  Measurement settings
+                </div>
+
+                <div class="toggle toggle-static">
+
+                  <span class="check check-on"></span>
+
+                  <span>
+                    Breathing
+                    <em>(always enabled)</em>
+                  </span>
+
+                </div>
+
+                <label class="toggle">
+
+                  <input type="checkbox" id="m-cardio">
+
+                  <span>
+                    Cardio measurements
+                    <em>(pulse, arterial pressure, HRV)</em>
+                  </span>
+
+                </label>
+
+                <label class="toggle">
+
+                  <input type="checkbox" id="m-face">
+
+                  <span>
+                    Face metrics
+                    <em>(landmarks, talking and other supported metrics)</em>
+                  </span>
+
+                </label>
+
+              </div>
+
+
+              <!-- ORIGINAL SDK CONTROLS -->
+
+              <div class="controls studio-controls">
+
+                <button id="btn-start" type="button">
+                  Start session
+                </button>
+
+                <button id="btn-stop"
+                        type="button"
+                        disabled>
+                  Stop
+                </button>
+
+                <button id="btn-reset"
+                        type="button"
+                        disabled>
+                  Reset
+                </button>
+
+              </div>
+
+              <p class="studio-disclaimer">
+                Measurements depend on camera position,
+                lighting, movement and supported signal
+                conditions. They are not medical assessments.
+              </p>
+
+            </section>
+
+
+            <!-- RIGHT COLUMN: SIGNALS -->
+
+            <section class="right-col">
+
+              <div class="studio-section-heading chart-column-heading">
+
+                <div>
+                  <span class="section-kicker">
+                    SIGNAL OBSERVATORY
+                  </span>
+
+                  <h2>Session signals</h2>
+                </div>
+
+                <span class="session-label">
+                  LIVE DATA
+                </span>
+
+              </div>
+
+
+              <!-- BREATHING RATE -->
+
+              <div class="chart-panel">
+
+                <div class="chart-header">
+
+                  <div class="chart-title">
+                    Breathing rate
+                  </div>
+
+                  <div class="chart-unit">
+                    BR/min
+                  </div>
+
+                </div>
+
+                <div class="chart-canvas-wrap">
+
+                  <canvas id="chart-breathing-rate"></canvas>
+
+                  <div class="chart-skeleton"
+                       aria-hidden="true">
+                    <i></i><i></i><i></i><i></i><i></i>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- BREATHING WAVEFORM -->
+
+              <div class="chart-panel">
+
+                <div class="chart-header">
+
+                  <div class="chart-title">
+                    Breathing waveform
+                  </div>
+
+                  <div class="chart-unit">
+                    RAW SIGNAL
+                  </div>
+
+                </div>
+
+                <div class="chart-canvas-wrap">
+
+                  <canvas id="chart-breathing-trace"></canvas>
+
+                  <div class="chart-skeleton"
+                       aria-hidden="true">
+                    <i></i><i></i><i></i><i></i><i></i>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- PULSE RATE -->
+
+              <div class="chart-panel"
+                   id="panel-pulse-rate">
+
+                <div class="chart-header">
+
+                  <div class="chart-title">
+                    Pulse rate
+                  </div>
+
+                  <div class="chart-unit">
+                    BPM
+                  </div>
+
+                </div>
+
+                <div class="chart-canvas-wrap">
+
+                  <canvas id="chart-pulse-rate"></canvas>
+
+                  <div class="chart-placeholder">
+                    Enable cardio measurements to display pulse data.
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- ARTERIAL PRESSURE -->
+
+              <div class="chart-panel"
+                   id="panel-arterial-pressure">
+
+                <div class="chart-header">
+
+                  <div class="chart-title">
+                    Arterial pressure trace
+                  </div>
+
+                  <div class="chart-unit">
+                    RAW SIGNAL
+                  </div>
+
+                </div>
+
+                <div class="chart-canvas-wrap">
+
+                  <canvas id="chart-arterial-pressure"></canvas>
+
+                  <div class="chart-placeholder">
+                    Enable cardio measurements to display this signal.
+                  </div>
+
+                </div>
+
+              </div>
+
+            </section>
+
+          </main>
+
+        </section>
+
+
+        <!-- ==================================
+             03. SIGNAL HISTORY
+        =================================== -->
+
+        <section id="page-history"
+                 class="cc-page cc-secondary-page"
+                 hidden>
+
+          <div class="cc-page-heading">
+
+            <div>
+              <span class="section-kicker">
+                ANALYTICS
+              </span>
+
+              <h1>Signal history</h1>
+
+              <p>
+                Review your previously recorded rehearsal sessions.
+              </p>
+            </div>
+
+          </div>
+
+          <section class="cc-panel">
+
+            <div class="cc-panel-heading">
+
+              <div>
+                <span class="section-kicker">
+                  SESSION ARCHIVE
+                </span>
+
+                <h2>Recorded sessions</h2>
+
+                <p>
+                  Locally stored session summaries.
+                </p>
+              </div>
+
+            </div>
+
+            <div id="cc-history-list"
+                 class="cc-empty-state">
+
+              <span class="cc-empty-icon">⌁</span>
+
+              <strong>No signal history yet</strong>
+
+              <p>
+                Complete a rehearsal to build your personal history.
+              </p>
+
+            </div>
+
+          </section>
+
+        </section>
+
+
+        <!-- ==================================
+             04. REPORTS
+        =================================== -->
+
+        <section id="page-reports"
+                 class="cc-page cc-secondary-page"
+                 hidden>
+
+          <div class="cc-page-heading">
+
+            <div>
+              <span class="section-kicker">
+                PERFORMANCE REVIEW
+              </span>
+
+              <h1>Reports</h1>
+
+              <p>
+                Review completed practice sessions and available
+                measurement summaries.
+              </p>
+            </div>
+
+          </div>
+
+          <section class="cc-panel">
+
+            <div class="cc-panel-heading">
+
+              <div>
+                <span class="section-kicker">
+                  SESSION RECORDS
+                </span>
+
+                <h2>Practice reports</h2>
+
+                <p>
+                  Your completed sessions and recorded measurements.
+                </p>
+              </div>
+
+            </div>
+
+            <div id="cc-reports-list"
+                 class="cc-empty-state">
+
+              <span class="cc-empty-icon">▤</span>
+
+              <strong>No reports available</strong>
+
+              <p>
+                Your completed sessions will appear here.
+              </p>
+
+            </div>
+
+          </section>
+
+        </section>
+
+
+        <!-- ==================================
+             05. SETTINGS
+        =================================== -->
+
+        <section id="page-settings"
+                 class="cc-page cc-secondary-page"
+                 hidden>
+
+          <div class="cc-page-heading">
+
+            <div>
+              <span class="section-kicker">
+                PREFERENCES
+              </span>
+
+              <h1>Settings</h1>
+
+              <p>
+                Application information and workspace preferences.
+              </p>
+            </div>
+
+          </div>
+
+          <section class="cc-panel">
+
+            <div class="cc-panel-heading">
+
+              <div>
+                <span class="section-kicker">
+                  APPLICATION
+                </span>
+
+                <h2>Workspace settings</h2>
+              </div>
+
+            </div>
+
+            <div class="cc-settings-panel">
+
+              <div class="cc-setting-row">
+
+                <div>
+                  <strong>Application</strong>
+                  <p>PulseStage Rehearsal Studio</p>
+                </div>
+
+                <span class="cc-setting-value">
+                  Desktop
+                </span>
+
+              </div>
+
+              <div class="cc-setting-row">
+
+                <div>
+                  <strong>Measurement provider</strong>
+                  <p>Presage SmartSpectra SDK</p>
+                </div>
+
+                <span class="cc-setting-value">
+                  Integrated
+                </span>
+
+              </div>
+
+              <div class="cc-setting-row">
+
+                <div>
+                  <strong>Camera permissions</strong>
+                  <p>
+                    Camera access is requested for active sessions.
+                  </p>
+                </div>
+
+                <span class="cc-setting-value">
+                  Session-based
+                </span>
+
+              </div>
+
+              <div class="cc-setting-row">
+
+                <div>
+                  <strong>Session storage</strong>
+                  <p>
+                    Session summaries are stored locally on this device.
+                  </p>
+                </div>
+
+                <span class="cc-setting-value">
+                  Local
+                </span>
+
+              </div>
+
+            </div>
+
+          </section>
+
+        </section>
+
+
+        <!-- ==================================
+             06. PRIVACY
+        =================================== -->
+
+        <section id="page-privacy"
+                 class="cc-page cc-secondary-page"
+                 hidden>
+
+          <div class="cc-page-heading">
+
+            <div>
+              <span class="section-kicker">
+                PRIVACY & CONTROL
+              </span>
+
+              <h1>Your privacy</h1>
+
+              <p>
+                Understand how PulseStage handles sensing and
+                session records.
+              </p>
+            </div>
+
+          </div>
+
+          <section class="cc-panel cc-privacy-panel">
+
+            <span class="section-kicker">
+              CAMERA ACCESS
+            </span>
+
+            <div class="cc-privacy-mark">◎</div>
+
+            <h2>Your camera. Your choice.</h2>
+
+            <p>
+              PulseStage uses camera-based sensing during an
+              active rehearsal session. Camera access is not
+              intended for covert monitoring.
+            </p>
+
+            <div class="cc-setting-row">
+
+              <div>
+                <strong>Camera sensing</strong>
+                <p>
+                  The application requests access when a sensing
+                  session begins.
+                </p>
+              </div>
+
+              <span class="cc-setting-value">
+                Session-based
+              </span>
+
+            </div>
+
+            <div class="cc-setting-row">
+
+              <div>
+                <strong>Session summaries</strong>
+                <p>
+                  The Command Center stores session summaries
+                  locally on this device.
+                </p>
+              </div>
+
+              <span class="cc-setting-value">
+                Local storage
+              </span>
+
+            </div>
+
+            <div class="cc-setting-row">
+
+              <div>
+                <strong>Clear session history</strong>
+                <p>
+                  Delete locally saved PulseStage session summaries.
+                </p>
+              </div>
+
+              <button id="cc-clear-history"
+                      class="cc-danger-button"
+                      type="button">
+                Clear history
+              </button>
+
+            </div>
+
+            <p class="cc-footnote">
+              PulseStage provides rehearsal support, not medical
+              diagnosis or automated judgments about emotions.
+              Clearing session summaries does not necessarily
+              delete other application data or external records.
+            </p>
+
+          </section>
+
+        </section>
+
+
+      </main>
+
+    </div>
+
+
+    <!-- APPLICATION FOOTER -->
+
+    <footer class="studio-footer">
+
+      <span>PulseStage</span>
+
+      <span>
+        Camera sensing is active only during a session.
+      </span>
+
+    </footer>
+
+  </div>
+
+
+  <!-- ======================================
+       APPLICATION SCRIPTS
+  ======================================= -->
+
+  <!-- Existing SmartSpectra SDK renderer -->
+<script src="./dist/renderer.bundle.js"></script>
+
+<!-- Command Center navigation and local session summaries -->
+<script src="./command-center.js"></script>
+
+<!-- PulseStage AI session analysis -->
+<script src="./command-center-ai.js"></script>
+
+<!-- Landing page / application navigation -->
+<script src="./ui.js"></script>
+
+</body>
+</html>
